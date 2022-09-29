@@ -13,6 +13,30 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div style="background-color:aquamarine" class="container-fluid">
+        <a class="navbar-brand" href="insects.html">Interesting Insects</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>  
+    
+    <div style="background-color:antiquewhite" class="collapse navbar-collapse" id="navbar-toggler" style="position:center">
+        <ul class="navbar-nav mr-auto" >
+            <li class="nav-item">
+            <a class="nav-link active" href="Basic.html">Basic</a>
+            </li>
+
+            <li class="nav-item" style="background-color:blueviolet; position: relative;">
+            <a class="nav-link" href="Advanced.html">Advanced</a>
+            </li>
+        </ul>
+    </div> 
+    </div>
+    
+</nav>
+
+
 <h1>Insects by Pullamgari Sravanth Kumar Reddy</h1>
 <div class="container">
     <div class="row">
@@ -94,20 +118,46 @@
       </tr>
     </tbody>
   </table>
-  <div class="btn-toolbar">
-  <div class="btn-group" aria-label="success" >
+  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group" role = "group" aria-label="success" >
     <button type="button" class="btn btn-success">P</button>
     <button type="button" class="btn btn-success">U</button>
     <button type="button" class="btn btn-success">L</button>
   </div>
-  <div class="btn-group" aria-label="warning">
+  <div class="btn-group" role="group" aria-label="warning">
     <button type="button" class="btn btn-warning">L</button>
     <button type="button" class="btn btn-warning">A</button>
     </div>
-    <div class="btn-group" aria-label="danger">
+    <div class="btn-group" role ="group" aria-label="danger">
       <button type="button" class="btn btn-danger">M</button>
     </div>
   </div>
+  <div class="dropdown" style="margin: 10px 10px 10px 0px;">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Links to pages       
+      </button>
+      <div class="dropdown-menu">
+        <ul>
+        <li><a class="dropdown-item" href="basic.html">Basic</a></li>
+        <li><a class="dropdown-item" href="advanced.html">Advanced</a></li>
+      </ul>
+    </div>
+  </div>
+</div>  
+<form>
+  <div class="form-group">
+    <label for="InputEmail" class="form-label">Email address</label>
+    <input type="email address" placeholder="Enter your email address:" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="Insect" class="form-label">Insects</label>
+    <input type="text" placeholder="Enter your insect:" class="form-control" for="insects">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="formcheck">
+    <label class="form-check-label" for="formCheck">Sign up for newsletter?</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
   
 
 
